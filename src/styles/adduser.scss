@@ -1,0 +1,62 @@
+@import './variables';
+.form-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-title{
+        margin-bottom: 15px;
+        margin-top: 100px;
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 30px;
+        border: 3px solid #f2f2f2;
+        padding: 1rem;
+        width: 90%;
+        height: 100%;
+        .div-field{
+            label{
+                color: $secondary-color;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1;
+                margin-right: 4px;
+            }
+            input, select{
+                border-color: rgba(0, 0, 0, 0.23);
+                border-width: 1px;
+                font-size: 1rem;
+                padding: 5px;
+                &:focus {
+                    border-color: $secondary-color !important;
+                }
+            }
+        }
+        .submit{
+            color: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            .submit-input{
+                background: $primary-color;
+                color: #fff;
+                border: none;
+                border-radius: 9px;
+                font-size: 1rem;
+                padding: 15px;
+                &:hover{
+                    background: #fff; 
+                    color:$primary-color;
+                    border: 1px solid $primary-color;
+                }
+            }
+                    
+        }
+    }
+}

@@ -1,0 +1,20 @@
+main {
+  display: flex;
+}
+main .left {
+  background-image: url(../assets/Background.svg);
+}
+
+@media only screen and (max-width: 600px) {
+  main .left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main .left {
+    width: 50%;
+  }
+  main .form {
+    width: 50%;
+  }
+}/*# sourceMappingURL=login.css.map */

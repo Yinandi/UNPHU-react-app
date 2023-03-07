@@ -1,0 +1,18 @@
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:'Header Header'
+                        'SideBar main ';
+    Header{
+        grid-area: Header;
+    }
+    SideBar{
+        grid-area: SideBar;
+    }
+    main{
+        grid-area: main;
+    }
+}
+

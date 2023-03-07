@@ -1,0 +1,87 @@
+@import './variables';
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../assets/Background.svg);
+    background-size: cover;
+    height: 6em;
+}
+.dropdown{
+    position: relative;
+    .dropdown-button{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 15em;
+        border: none;
+        background: none;
+        .user-icon,.username, .up, .down {
+            color: #fff;
+        }
+        .user-icon {
+            font-size: 3rem;
+        }
+        .username,.up,.down{
+            font-size: 1rem;
+        }
+    }
+    .logout-button{
+        display: flex;
+        width: 11em;
+        padding: 10px;
+        text-decoration: none;
+        color: red;
+        background-color: #ffff;
+        border: 2px solid #f2f2f2;
+        align-items: center;
+        position: relative;
+        bottom: -84px;
+        right: 2px;
+        &:hover{
+            background-color: #f3f3f3;
+        }
+        .logout-icon{
+            position: absolute;
+            right: 10px;
+            margin: 0;
+        }
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .dropdown{
+        .dropdown-button{
+            .username{
+                display: none;
+            }
+            .up{
+                display: none;
+            }
+            .down{
+                display: none;
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 992px){
+    .dropdown{
+        .dropdown-button{
+            flex-direction: column;
+            width: 6em;
+            .username{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
